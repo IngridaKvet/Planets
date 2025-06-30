@@ -1,0 +1,33 @@
+:root{
+/* Colors */
+  --color-mercury: #419ebb;
+  --color-venus: #eda249;
+  --color-earth: #6f2ed6;
+  --color-mars: #d14c32;
+  --color-jupiter: #d83a34;
+  --color-saturn: #cd5120;
+  --color-uranus: #1ec2a4;
+  --color-neptune: #2d68f0;
+  --color-white: #ffffff;
+  --color-light-grey: #838391;
+  --color-dark-blue: #070724;
+  --color-grey-blue: #38384f;
+
+/* Typography */
+  --font-family-antonio: 'Antonio', sans-serif;
+  --font-family-league-spartan: 'League Spartan', sans-serif;
+
+  --font-size-heading-xl: 8rem; /* 80px */
+  --font-size-heading-l: 4rem; /* 40px */
+  --font-size-heading-m: 1.2rem; /* 12px */
+  --font-size-heading-s: 1.1rem; /* 11px */
+  --font-size-body: 1.4rem; /* 14px */
+  --spacing-plus-2-6: 2.6rem;
+  --spacing-plus-1: 1rem;
+  --spacing-minus-1-5: -1.5rem;
+--line-height-l: 10.3rem;
+--line-height-m: 5.2rem;
+--line-height-s: 2.5rem;
+
+/* Buttons */
+}
