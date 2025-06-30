@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
