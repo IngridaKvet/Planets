@@ -1,9 +1,10 @@
-import styles from "./Layout.module.scss";
+import styles from "./layout.module.scss";
+import Header from "../Header/Header";
 
 const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
-      <div></div>
+      <Header/>
       <main className={styles.main}>{children}</main>
     </div>
   );
