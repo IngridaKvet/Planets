@@ -1,4 +1,6 @@
-import styles from "./navigation.module.scss";
+import styles from "./mobileMenu.module.scss";
+import arrowIcon from "../../assets/icon-chevron.svg";
+
 import { NavLink } from "react-router";
 
 const PLANETS = [
@@ -19,18 +21,22 @@ const MobileMenu = () => {
         {PLANETS.map((planet) => {
           const path = `/${planet.name.toLowerCase()}`;
           return (
-            <li key={planet}>
+            <li key={planet.name}>
               <NavLink
                 to={path}
   className={({ isActive }) =>
     isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
 }
               >
+                <div className={styles.linkWrapper}>
                     <span
       className={styles.dot}
       style={{ backgroundColor: planet.color }}
     ></span>
                 {planet.name}
+                </div>
+                <span><img src={arrowIcon} alt="Arrow icon" /></span>
+
               </NavLink>
             </li>
           );
