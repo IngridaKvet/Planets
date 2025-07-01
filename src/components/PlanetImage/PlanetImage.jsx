@@ -9,7 +9,7 @@ const PlanetImage = ({ planet, tab }) => {
 
   return (
     <div className={styles.imageWrapper}>
-      <img className={styles.planetImage} src={mainImg} alt={`${planet.name} illustration`} />
+      <img className={`${styles.planetImage} ${tab === "geology" ? styles.withGeology : ""}`}src={mainImg} alt={`${planet.name} illustration`} />
       {tab === "geology" && (
         <img
           className={`${styles.geologyImage} ${styles[name]}`}

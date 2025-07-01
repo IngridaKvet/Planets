@@ -1,51 +1,27 @@
-.geologyImage {
+.imageWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 
-.mercury,
-.venus,
-.earth,
-.mars,
-.uranus,
-.neptune {
+.planetImage {
+  display: block;
+  width: 100%;
+}
+
+.withGeology{
+  margin-bottom: 100px;
+}
+
+.geologyImage {
+  position: absolute;
+  bottom: 0;
   width: 16.3rem;
-  top: -82px;
-}
-
-.mercury {
-  left: 64px;
-}
-
-.venus {
-  left: 119px;
-}
-
-.earth {
-  left: 144px;
-}
-
-.mars {
-  left: 87px;
-}
-
-.jupiter {
-  width: 16.3rem;
-  top: -92px;
-  left: 210px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .saturn {
-  width: 16.3rem;
-  top: -280px;
-  left: 252px;
-}
-
-.uranus {
-  left: 148px;
-}
-
-.neptune {
-  left: 144px;
+  bottom: 130px;
 }
