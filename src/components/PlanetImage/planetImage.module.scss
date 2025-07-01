@@ -1,0 +1,51 @@
+.geologyImage {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mercury,
+.venus,
+.earth,
+.mars,
+.uranus,
+.neptune {
+  width: 16.3rem;
+  top: -82px;
+}
+
+.mercury {
+  left: 64px;
+}
+
+.venus {
+  left: 119px;
+}
+
+.earth {
+  left: 144px;
+}
+
+.mars {
+  left: 87px;
+}
+
+.jupiter {
+  width: 16.3rem;
+  top: -92px;
+  left: 210px;
+}
+
+.saturn {
+  width: 16.3rem;
+  top: -280px;
+  left: 252px;
+}
+
+.uranus {
+  left: 148px;
+}
+
+.neptune {
+  left: 144px;
+}
