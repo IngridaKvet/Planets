@@ -7,10 +7,12 @@
 
 .planetImage {
   display: block;
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: none;
 }
 
-.withGeology{
+.withGeology {
   margin-bottom: 100px;
 }
 

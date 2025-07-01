@@ -1,3 +1,11 @@
-.contentWrapper{
-    display: flex;
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 12.6rem 16.5rem 8.7rem 16.5rem;
+}
+
+.tabs {
+  width: 200px;
+  height: 300px;
+  background-color: aliceblue;
 }

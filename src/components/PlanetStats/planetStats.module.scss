@@ -7,12 +7,10 @@
     gap: 1.1rem;
   }
 
-    
   @media (max-width: 728px) {
     flex-direction: column;
     gap: 0.8rem;
     margin-inline: 2.4rem;
-   
   }
 }
 
@@ -26,12 +24,12 @@
   color: var(--color-white);
   min-width: 25.5rem;
   box-sizing: border-box;
+  margin-bottom: 5.6rem;
 
   @media (max-width: 1150px) {
     min-width: 16.4rem;
   }
 
-  
   @media (max-width: 728px) {
     flex-direction: row;
     justify-content: space-between;
@@ -44,10 +42,8 @@
   opacity: 0.5;
 }
 
-.value{
-        
+.value {
   @media (max-width: 728px) {
     font-size: 2rem;
-   
   }
 }

@@ -1,5 +1,5 @@
-@use './variables' as *;
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap');
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap");
 
 html {
   font-size: 62.5%;
@@ -20,18 +20,17 @@ body {
   line-height: 1.6;
 }
 
-
 //Typography
 
 .smallHeading {
   font-family: var(--font-family-league-spartan);
   font-weight: 700;
-  font-size: var(--font-size-heading-s); 
-  line-height: var(--line-height-s);    
+  font-size: var(--font-size-heading-s);
+  line-height: var(--line-height-s);
   letter-spacing: var(--spacing-plus-1);
   text-transform: uppercase;
 
-    @media (max-width: 900px) {
+  @media (max-width: 900px) {
     font-size: 0.8rem;
     line-height: 1.6rem;
     letter-spacing: 0.727px;
@@ -41,14 +40,29 @@ body {
 .largeHeading {
   font-family: var(--font-family-antonio);
   font-weight: 400;
-  font-size: var(--font-size-heading-l); 
-  line-height: var(--line-height-m);    
+  font-size: var(--font-size-heading-l);
+  line-height: var(--line-height-m);
   letter-spacing: var(--spacing-minus-1-5);
   text-transform: uppercase;
 
-    @media (max-width: 900px) {
+  @media (max-width: 900px) {
     font-size: 2.4rem;
     letter-spacing: -0.9px;
     line-height: normal;
   }
+}
+
+.extraLargeHeading {
+  font-family: var(--font-family-antonio);
+  font-weight: 400;
+  font-size: var(--font-size-heading-xl);
+  line-height: var(--line-height-l);
+  text-transform: uppercase;
+}
+
+.bodyText {
+  font-family: var(--font-family-league-spartan);
+  font-weight: 300;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-s);
 }
