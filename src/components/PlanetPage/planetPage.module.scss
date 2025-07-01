@@ -4,8 +4,64 @@
   margin: 12.6rem 16.5rem 8.7rem 16.5rem;
 }
 
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .tabs {
-  width: 200px;
-  height: 300px;
-  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.tabsBtn {
+  width: 100%;
+  display: flex;
+  padding: 1.2rem 2.8rem;
+  border: 1px solid #97979733;
+  background-color: transparent;
+  color: var(--color-white);
+  gap: 2.8rem;
+}
+
+.tabsBtn:hover {
+  background-color: var(--color-grey-blue);
+}
+
+.numbering {
+  opacity: 0.5;
+}
+
+.mercury {
+  background-color: var(--color-mercury);
+}
+
+.venus {
+  background-color: var(--color-venus);
+}
+
+.earth {
+  background-color: var(--color-earth);
+}
+
+.mars {
+  background-color: var(--color-mars);
+}
+
+.jupiter {
+  background-color: var(--color-jupiter);
+}
+
+.saturn {
+  background-color: var(--color-saturn);
+}
+
+.uranus {
+  background-color: var(--color-uranus);
+}
+
+.neptune {
+  background-color: var(--color-neptune);
 }

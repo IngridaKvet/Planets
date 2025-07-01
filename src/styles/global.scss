@@ -37,6 +37,15 @@ body {
   }
 }
 
+.mediumHeading{
+    font-family: var(--font-family-league-spartan);
+  font-weight: 700;
+  font-size: var(--font-size-heading-m);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--spacing-plus-2-6);
+  text-transform: uppercase;
+}
+
 .largeHeading {
   font-family: var(--font-family-antonio);
   font-weight: 400;

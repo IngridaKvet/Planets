@@ -2,15 +2,52 @@ import styles from "./planetPage.module.scss";
 import PlanetStats from "../PlanetStats/PlanetStats";
 import PlanetImage from "../PlanetImage/PlanetImage";
 import PlanetContent from "../PlanetContent/PlanetContent";
+import { useState } from "react";
 
 const PlanetPage = ({ planet }) => {
+  const [activeTab, setActiveTab] = useState("overview");
+
   return (
     <section className={styles.page}>
       <div className={styles.contentWrapper}>
-        <PlanetImage planet={planet} tab={"geology"} />
-        <div>
+        <PlanetImage planet={planet} tab={activeTab} />
+        <div className={styles.textWrapper}>
           <PlanetContent planet={planet} />
-          <div className={styles.tabs}></div>
+          <div className={styles.tabs}>
+            <button
+              className={`mediumHeading ${styles.tabsBtn} ${
+                activeTab === "overview"
+                  ? `${styles[planet.name.toLowerCase()]}`
+                  : ""
+              }`}
+              onClick={() => setActiveTab("overview")}
+            >
+              <span className={styles.numbering}>01</span>
+              <span>Overview</span>
+            </button>
+            <button
+              className={`mediumHeading ${styles.tabsBtn} ${
+                activeTab === "structure"
+                  ? `${styles[planet.name.toLowerCase()]}`
+                  : ""
+              }`}
+              onClick={() => setActiveTab("structure")}
+            >
+              <span className={styles.numbering}>02</span>
+              <span>Internal Structure</span>
+            </button>
+            <button
+              className={`mediumHeading ${styles.tabsBtn} ${
+                activeTab === "geology"
+                  ? `${styles[planet.name.toLowerCase()]}`
+                  : ""
+              }`}
+              onClick={() => setActiveTab("geology")}
+            >
+              <span className={styles.numbering}>03</span>
+              <span>Surface Geology</span>
+            </button>
+          </div>
         </div>
       </div>
 
