@@ -21,19 +21,17 @@
   color: var(--color-white);
   text-transform: uppercase;
   text-decoration: none;
-  opacity: 0.75;
   font-size: 1.5rem;
-     display: flex;
-     width: 100%;
-     justify-content: space-between;
-           padding-block: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-block: 2rem;
   padding-inline: 3.2rem;
-    border-bottom: 1px solid #97979733;
-
+  border-bottom: 1px solid #97979733;
 }
 
-.linkWrapper{
-        display: flex;
+.linkWrapper {
+  display: flex;
   align-items: center;
   gap: 2.5rem;
 }
@@ -48,5 +46,3 @@
   border-radius: 50%;
   display: inline-block;
 }
-
-

@@ -2,14 +2,14 @@ import styles from "./navigation.module.scss";
 import { NavLink } from "react-router";
 
 const PLANETS = [
-  "Mercury",
-  "Venus",
-  "Earth",
-  "Mars",
-  "Jupiter",
-  "Saturn",
-  "Uranus",
-  "Neptune",
+  { name: "Mercury", className: "mercury" },
+  { name: "Venus", className: "venus" },
+  { name: "Earth", className: "earth" },
+  { name: "Mars", className: "mars" },
+  { name: "Jupiter", className: "jupiter" },
+  { name: "Saturn", className: "saturn" },
+  { name: "Uranus", className: "uranus" },
+  { name: "Neptune", className: "neptune" },
 ];
 
 const Navigation = () => {
@@ -17,17 +17,18 @@ const Navigation = () => {
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         {PLANETS.map((planet) => {
-          const path = `/${planet.toLowerCase()}`;
+          const path = `/${planet.name.toLowerCase()}`;
           return (
-            <li key={planet}>
+            <li key={planet.name}>
               <NavLink
                 to={path}
-  className={({ isActive }) =>
-    isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-}
+                className={({ isActive }) =>
+                  `${styles.navLink} ${styles[planet.className]} ${
+                    isActive ? styles.active : ""
+                  }`
+                }
               >
-                
-                {planet}
+                {planet.name}
               </NavLink>
             </li>
           );

@@ -4,14 +4,14 @@ import arrowIcon from "../../assets/icon-chevron.svg";
 import { NavLink } from "react-router";
 
 const PLANETS = [
-  { name: "Mercury", color: "var(--color-mercury)" },
-  { name: "Venus", color: "var(--color-venus)" },
-  { name: "Earth", color: "var(--color-earth)" },
-  { name: "Mars", color: "var(--color-mars)" },
-  { name: "Jupiter", color: "var(--color-jupiter)" },
-  { name: "Saturn", color: "var(--color-saturn)" },
-  { name: "Uranus", color: "var(--color-uranus)" },
-  { name: "Neptune", color: "var(--color-neptune)" },
+  { name: "Mercury", color: "#DEF4FC" },
+  { name: "Venus", color: "#F7CC7F" },
+  { name: "Earth", color: "#545BFE" },
+  { name: "Mars", color: "#FF6A45" },
+  { name: "Jupiter", color: "#ECAD7A" },
+  { name: "Saturn", color: "#FCCB6B" },
+  { name: "Uranus", color: "#65F0D5" },
+  { name: "Neptune", color: "#497EFA" },
 ];
 
 const MobileMenu = () => {
@@ -24,19 +24,22 @@ const MobileMenu = () => {
             <li key={planet.name}>
               <NavLink
                 to={path}
-  className={({ isActive }) =>
-    isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-}
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.navLink} ${styles.active}`
+                    : styles.navLink
+                }
               >
                 <div className={styles.linkWrapper}>
-                    <span
-      className={styles.dot}
-      style={{ backgroundColor: planet.color }}
-    ></span>
-                {planet.name}
+                  <span
+                    className={styles.dot}
+                    style={{ backgroundColor: planet.color }}
+                  ></span>
+                  {planet.name}
                 </div>
-                <span><img src={arrowIcon} alt="Arrow icon" /></span>
-
+                <span>
+                  <img src={arrowIcon} alt="Arrow icon" />
+                </span>
               </NavLink>
             </li>
           );

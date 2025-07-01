@@ -16,6 +16,7 @@ const Header = () => {
         className={styles.hamburger}
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
+        disabled={mobileOpen}
       >
         <img src={hamburgerIcon} alt="Menu" />
       </button>

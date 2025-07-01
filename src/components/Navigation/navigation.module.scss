@@ -18,14 +18,58 @@
 }
 
 .navLink {
+  display: flex;
+  min-height: 8.5rem;
   color: var(--color-white);
   text-transform: uppercase;
   text-decoration: none;
   opacity: 0.75;
   font-size: 1.1rem;
+  border-top: 4px solid transparent;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    border-top: none;
+    min-height: auto;
+  }
 }
 
-.active {
+.mercury:hover {
+  border-top-color: var(--color-mercury);
   opacity: 1;
 }
 
+.venus:hover {
+  border-top-color: var(--color-venus);
+  opacity: 1;
+}
+
+.earth:hover {
+  border-top-color: var(--color-earth);
+  opacity: 1;
+}
+
+.mars:hover {
+  border-top-color: var(--color-mars);
+  opacity: 1;
+}
+
+.jupiter:hover {
+  border-top-color: var(--color-jupiter);
+  opacity: 1;
+}
+
+.saturn:hover {
+  border-top-color: var(--color-saturn);
+  opacity: 1;
+}
+
+.uranus:hover {
+  border-top-color: var(--color-uranus);
+  opacity: 1;
+}
+
+.neptune:hover {
+  border-top-color: var(--color-neptune);
+  opacity: 1;
+}
