@@ -2,18 +2,62 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 12.6rem 16.5rem 8.7rem 16.5rem;
+
+
+    @media (max-width: 1375px) {
+  margin: 12.6rem 2rem 8.7rem 2rem;
+  }
+  
+  @media (max-width: 1000px) {
+  grid-template-columns: 1fr;
+  gap: 13rem;
+  }
+
+    @media (max-width: 775px) {
+  grid-template-columns: 1fr;
+  margin-bottom: 2.8rem;
+  }
 }
 
 .textWrapper {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+
+    @media (max-width: 1000px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+    @media (max-width: 775px) {
+    flex-direction: column;
+    
+
+  }
 }
 
 .tabs {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+    width: 35rem;
+
+          @media (max-width: 775px) {
+    display: none;
+
+  }
+}
+
+.mobileTabs{
+  display: none;
+  background-color: aliceblue;
+
+      @media (max-width: 775px) {
+    display: block;
+
+  }
 }
 
 .tabsBtn {

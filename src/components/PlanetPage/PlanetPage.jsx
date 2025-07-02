@@ -2,17 +2,23 @@ import styles from "./planetPage.module.scss";
 import PlanetStats from "../PlanetStats/PlanetStats";
 import PlanetImage from "../PlanetImage/PlanetImage";
 import PlanetContent from "../PlanetContent/PlanetContent";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const PlanetPage = ({ planet }) => {
   const [activeTab, setActiveTab] = useState("overview");
 
+  useEffect(() => {
+    setActiveTab("overview");
+  }, [planet.name]);
+
   return (
     <section className={styles.page}>
+<div className={styles.mobileTabs}>bdandnajd</div>
+
       <div className={styles.contentWrapper}>
         <PlanetImage planet={planet} tab={activeTab} />
         <div className={styles.textWrapper}>
-          <PlanetContent planet={planet} />
+          <PlanetContent planet={planet} tab={activeTab} />
           <div className={styles.tabs}>
             <button
               className={`mediumHeading ${styles.tabsBtn} ${

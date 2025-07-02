@@ -34,6 +34,10 @@
   }
 }
 
+.active{
+    opacity: 1;
+}
+
 .mercury:hover {
   border-top-color: var(--color-mercury);
   opacity: 1;
