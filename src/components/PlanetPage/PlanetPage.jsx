@@ -13,7 +13,39 @@ const PlanetPage = ({ planet }) => {
 
   return (
     <section className={styles.page}>
-<div className={styles.mobileTabs}>bdandnajd</div>
+      <div className={styles.mobileTabs}>
+        <button
+          className={`${styles.mobileTab} ${
+            activeTab === "overview"
+              ? `${styles[`${planet.name.toLowerCase()}Tab`]}`
+              : ""
+          } `}
+          onClick={() => setActiveTab("overview")}
+        >
+          Overview
+        </button>
+        <button
+          className={`${styles.mobileTab} ${
+            activeTab === "structure"
+              ? `${styles[`${planet.name.toLowerCase()}Tab`]}`
+              : ""
+          } `}
+          onClick={() => setActiveTab("structure")}
+        >
+          Structure
+        </button>
+
+        <button
+          className={`${styles.mobileTab} ${
+            activeTab === "geology"
+              ? `${styles[`${planet.name.toLowerCase()}Tab`]}`
+              : ""
+          } `}
+          onClick={() => setActiveTab("geology")}
+        >
+          Geology
+        </button>
+      </div>
 
       <div className={styles.contentWrapper}>
         <PlanetImage planet={planet} tab={activeTab} />

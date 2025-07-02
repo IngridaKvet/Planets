@@ -3,8 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .planetImage {
@@ -12,6 +10,9 @@
   max-width: 100%;
   height: auto;
 
+  @media (max-width: 775px) {
+    padding-inline: 7.5rem;
+  }
 }
 
 .withGeology {

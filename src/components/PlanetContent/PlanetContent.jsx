@@ -6,7 +6,7 @@ const PlanetContent = ({ planet, tab }) => {
   return (
     <section className={styles.mainContent}>
       <h1 className="extraLargeHeading">{planet.name}</h1>
-      <p className="bodyText">{planet[tab].content}</p>
+      <p className={`bodyText ${styles.mainText}`}>{planet[tab].content}</p>
       <p className={`bodyText ${styles.linkText}`}>
         Source: {"  "}
         <a

@@ -11,6 +11,14 @@
   }
 }
 
+.mainText{
+        @media (max-width: 775px) {
+    text-align: center;
+    
+
+  }
+}
+
 .linkText {
   opacity: 0.5;
   display: flex;

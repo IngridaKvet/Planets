@@ -37,8 +37,8 @@ body {
   }
 }
 
-.mediumHeading{
-    font-family: var(--font-family-league-spartan);
+.mediumHeading {
+  font-family: var(--font-family-league-spartan);
   font-weight: 700;
   font-size: var(--font-size-heading-m);
   line-height: var(--line-height-s);
@@ -67,6 +67,16 @@ body {
   font-size: var(--font-size-heading-xl);
   line-height: var(--line-height-l);
   text-transform: uppercase;
+
+  @media (max-width: 1000px) {
+    font-size: 4.8rem;
+    letter-spacing: auto;
+    line-height: normal;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
 }
 
 .bodyText {
@@ -74,4 +84,10 @@ body {
   font-weight: 300;
   font-size: var(--font-size-body);
   line-height: var(--line-height-s);
+
+  @media (max-width: 1000px) {
+    font-size: 1.1rem;
+    letter-spacing: auto;
+    line-height: 2.2rem;
+  }
 }

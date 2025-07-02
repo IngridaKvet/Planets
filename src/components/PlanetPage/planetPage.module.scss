@@ -3,19 +3,18 @@
   grid-template-columns: 2fr 1fr;
   margin: 12.6rem 16.5rem 8.7rem 16.5rem;
 
-
-    @media (max-width: 1375px) {
-  margin: 12.6rem 2rem 8.7rem 2rem;
+  @media (max-width: 1375px) {
+    margin: 12.6rem 2rem 8.7rem 2rem;
   }
-  
+
   @media (max-width: 1000px) {
-  grid-template-columns: 1fr;
-  gap: 13rem;
+    grid-template-columns: 1fr;
+    gap: 5rem;
   }
 
-    @media (max-width: 775px) {
-  grid-template-columns: 1fr;
-  margin-bottom: 2.8rem;
+  @media (max-width: 775px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 2.8rem;
   }
 }
 
@@ -24,17 +23,14 @@
   flex-direction: column;
   gap: 4rem;
 
-
-    @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-    @media (max-width: 775px) {
+  @media (max-width: 775px) {
     flex-direction: column;
-    
-
   }
 }
 
@@ -42,22 +38,38 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-    width: 35rem;
+  width: 35rem;
 
-          @media (max-width: 775px) {
+  @media (max-width: 775px) {
     display: none;
-
   }
 }
 
-.mobileTabs{
+.mobileTabs {
   display: none;
-  background-color: aliceblue;
 
-      @media (max-width: 775px) {
-    display: block;
-
+  @media (max-width: 775px) {
+    display: flex;
+    gap: 4.4rem;
+    justify-content: center;
+    border-bottom: 1px solid #97979733;
   }
+}
+
+.mobileTab {
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+  min-width: 8rem;
+  font-family: var(--font-family-league-spartan);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.929px;
+  text-transform: uppercase;
+  opacity: 0.75;
+    border-bottom: 4px solid transparent;
 }
 
 .tabsBtn {
@@ -108,4 +120,45 @@
 
 .neptune {
   background-color: var(--color-neptune);
+}
+
+.mercuryTab {
+  opacity: 1;
+  border-bottom-color: var(--color-mercury);
+}
+
+
+.venusTab {
+  opacity: 1;
+  border-bottom-color: var(--color-venus);
+}
+
+.earthTab {
+  opacity: 1;
+  border-bottom-color: var(--color-earth);
+}
+
+.marsTab {
+  opacity: 1;
+  border-bottom-color: var(--color-mars);
+}
+
+.jupiterTab {
+  opacity: 1;
+  border-bottom-color: var(--color-jupiter);
+}
+
+.saturnTab {
+  opacity: 1;
+  border-bottom-color: var(--color-saturn);
+}
+
+.uranusTab {
+  opacity: 1;
+  border-bottom-color: var(--color-uranus);
+}
+
+.neptuneTab {
+  opacity: 1;
+  border-bottom-color: var(--color-neptune);
 }
