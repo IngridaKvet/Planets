@@ -14,7 +14,7 @@ const PLANETS = [
   { name: "Neptune", color: "#497EFA" },
 ];
 
-const MobileMenu = () => {
+const MobileMenu = (onClose) => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
@@ -29,6 +29,7 @@ const MobileMenu = () => {
                     ? `${styles.navLink} ${styles.active}`
                     : styles.navLink
                 }
+                onClick={onClose}
               >
                 <div className={styles.linkWrapper}>
                   <span

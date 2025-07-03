@@ -1,0 +1,11 @@
+.loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  background-image: url("../../assets/background-stars.svg");
+  gap: 2rem;
+}
